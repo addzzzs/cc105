@@ -114,6 +114,11 @@ public class Register extends javax.swing.JFrame {
                 lnameActionPerformed(evt);
             }
         });
+        lname.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                lnameKeyTyped(evt);
+            }
+        });
 
         username.setFont(new java.awt.Font("Eras Medium ITC", 0, 18)); // NOI18N
         username.setText("Username");
@@ -125,6 +130,11 @@ public class Register extends javax.swing.JFrame {
         username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameActionPerformed(evt);
+            }
+        });
+        username.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                usernameKeyTyped(evt);
             }
         });
 
@@ -141,6 +151,11 @@ public class Register extends javax.swing.JFrame {
                 emailActionPerformed(evt);
             }
         });
+        email.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                emailKeyTyped(evt);
+            }
+        });
 
         password.setFont(new java.awt.Font("Eras Medium ITC", 0, 18)); // NOI18N
         password.setText("Password");
@@ -154,6 +169,11 @@ public class Register extends javax.swing.JFrame {
                 passwordActionPerformed(evt);
             }
         });
+        password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                passwordKeyTyped(evt);
+            }
+        });
 
         cpassword.setFont(new java.awt.Font("Eras Medium ITC", 0, 18)); // NOI18N
         cpassword.setText("Confirm Password");
@@ -165,6 +185,11 @@ public class Register extends javax.swing.JFrame {
         cpassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cpasswordActionPerformed(evt);
+            }
+        });
+        cpassword.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                cpasswordKeyTyped(evt);
             }
         });
 
@@ -193,6 +218,11 @@ public class Register extends javax.swing.JFrame {
         number.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 numberActionPerformed(evt);
+            }
+        });
+        number.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                numberKeyTyped(evt);
             }
         });
 
@@ -349,61 +379,68 @@ public class Register extends javax.swing.JFrame {
     }//GEN-LAST:event_fnameFocusGained
 
     private void registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerActionPerformed
-        // TODO add your handling code here:
         try {
-        // Open connection
-                Class.forName("com.mysql.jdbc.Driver");
-                try (java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/carwash_reservation_db?userSSL=false", "root", "")) {
-                    String fName = fname.getText();
-                    String lName = lname.getText();
-                    String userName = username.getText();
-                    String cNum = number.getText();
-                    String Email = email.getText();
-                    String pass = password.getText();
-                    String cpass = cpassword.getText();
+            // Open connection
+            Class.forName("com.mysql.jdbc.Driver");
+            try (java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/carwash_reservation_db?userSSL=false", "root", "")) {
+                String fName = fname.getText();
+                String lName = lname.getText();
+                String userName = username.getText();
+                String cNum = number.getText();
+                String Email = email.getText();
+                String pass = password.getText();
+                String cpass = cpassword.getText();
 
-                    // Check if any of the required fields are empty
-                    if (fName.equals("First name") || lName.equals("Last name") || userName.equals("Username") || cNum.equals("Contact Number") || Email.equals("Email") || pass.equals("Password") || cpass.equals("Confirm Password")) {
-                        error.setVisible(true);
-                        error.setText("Please fill up all Information first!");
-                    } else if (cNum.length() != 11){
-                        error.setVisible(true);
-                        error.setText("Enter a valid number");
-                    } else if (!Email.contains("@gmail.com")){
-                        error.setVisible(true);
-                        error.setText("Enter a valid email address");
-                    } else if (!pass.equals(cpass)) {
-                        error.setVisible(true);
-                        error.setText("Passwords do not match.");
+                String checkUsernameQuery = "SELECT * FROM tbl_carwashreservation WHERE user_name = ?";
+                PreparedStatement checkUsernameStmt = (PreparedStatement) con.prepareStatement(checkUsernameQuery);
+                checkUsernameStmt.setString(1, userName);
+                ResultSet resultSet = checkUsernameStmt.executeQuery();
+
+                // Check if any of the required fields are empty
+                if (fName.equals("First name") || lName.equals("Last name") || userName.equals("Username") || cNum.equals("Contact Number") || Email.equals("Email") || pass.equals("Password") || cpass.equals("Confirm Password")) {
+                    error.setVisible(true);
+                    error.setText("Please fill up all Information first!");
+                } else if (resultSet.next()) {
+                    error.setVisible(true);
+                    error.setText("Username already exists. Please choose a different username.");
+                } else if (cNum.length() != 11) {
+                    error.setVisible(true);
+                    error.setText("Enter a valid number");
+                } else if (!Email.contains("@gmail.com")) {
+                    error.setVisible(true);
+                    error.setText("Enter a valid email address");
+                } else if (!pass.equals(cpass)) {
+                    error.setVisible(true);
+                    error.setText("Passwords do not match.");
+                } else {
+                    String sql = "INSERT INTO tbl_carwashreservation (first_name, last_name, user_name, email, contact_num, password) VALUES (?, ?, ?, ?, ?, ?)";
+                    PreparedStatement pstmt = (PreparedStatement) con.prepareStatement(sql);
+                    pstmt.setString(1, fName);
+                    pstmt.setString(2, lName);
+                    pstmt.setString(3, userName);
+                    pstmt.setString(4, Email);
+                    pstmt.setString(5, cNum);
+                    pstmt.setString(6, pass);
+
+                    // Execute the statement
+                    int rowsAffected = pstmt.executeUpdate();
+                    if (rowsAffected > 0) {
+                        JOptionPane.showMessageDialog(null, "Registration successful.");
+                        dispose(); // Close the current window
+                        // Open the dashboard window
+                        Login logPage = new Login();
+                        logPage.setVisible(true);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Registration failed.");
                     }
-                    else {
-                            String sql = "INSERT INTO tbl_carwashreservation (first_name, last_name, user_name, email, contact_num, password) VALUES (?, ?, ?, ?, ?, ?)";
-                            PreparedStatement pstmt = (PreparedStatement) con.prepareStatement(sql);
-                            pstmt.setString(1, fName);
-                            pstmt.setString(2, lName);
-                            pstmt.setString(3, userName);
-                            pstmt.setString(4, Email);
-                            pstmt.setString(5, cNum);
-                            pstmt.setString(6, pass);
-
-                            // Execute the statement
-                            int rowsAffected = pstmt.executeUpdate();
-                            if (rowsAffected > 0) {
-                                JOptionPane.showMessageDialog(null, "Registration successful.");
-                                dispose(); // Close the current window
-                                // Open the dashboard window
-                                Login logPage = new Login();
-                                logPage.setVisible(true);
-                            } else {
-                                JOptionPane.showMessageDialog(null, "Registration failed.");
-                            }
-                        }
-                    
                 }
-            } catch(Exception e) {
-                System.out.println(e.getMessage());
-                JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+
             }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
+        }
+
     }//GEN-LAST:event_registerActionPerformed
 
     private void fnameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fnameMouseClicked
@@ -682,6 +719,42 @@ public class Register extends javax.swing.JFrame {
             fname.setText("");
         }
     }//GEN-LAST:event_fnameKeyTyped
+
+    private void lnameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_lnameKeyTyped
+        if (lname.getText().equals("Last name")){
+            lname.setText("");
+        }
+    }//GEN-LAST:event_lnameKeyTyped
+
+    private void usernameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_usernameKeyTyped
+        if (username.getText().equals("Username")){
+            username.setText("");
+        }
+    }//GEN-LAST:event_usernameKeyTyped
+
+    private void numberKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_numberKeyTyped
+        if (number.getText().equals("Contact Number")){
+            number.setText("");
+        }
+    }//GEN-LAST:event_numberKeyTyped
+
+    private void emailKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_emailKeyTyped
+        if (email.getText().equals("Email")){
+            email.setText("");
+        }
+    }//GEN-LAST:event_emailKeyTyped
+
+    private void passwordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_passwordKeyTyped
+        if (password.getText().equals("Password")){
+            password.setText("");
+        }
+    }//GEN-LAST:event_passwordKeyTyped
+
+    private void cpasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cpasswordKeyTyped
+        if (cpassword.getText().equals("Confirm Password")){
+            cpassword.setText("");
+        }
+    }//GEN-LAST:event_cpasswordKeyTyped
 
     /**
      * @param args the command line arguments

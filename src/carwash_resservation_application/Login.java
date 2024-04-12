@@ -319,7 +319,7 @@ public class Login extends javax.swing.JFrame {
                 showMouseClicked(evt);
             }
         });
-        jPanel1.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 270, 30, 40));
+        jPanel1.add(show, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 260, 30, 50));
 
         hide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/eye (1).png"))); // NOI18N
         hide.setToolTipText("Hide password");
@@ -328,7 +328,7 @@ public class Login extends javax.swing.JFrame {
                 hideMouseClicked(evt);
             }
         });
-        jPanel1.add(hide, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 260, 30, 40));
+        jPanel1.add(hide, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 260, 30, 50));
 
         txtpassword.setFont(new java.awt.Font("Eras Medium ITC", 0, 18)); // NOI18N
         txtpassword.setForeground(new java.awt.Color(51, 51, 51));
@@ -506,8 +506,13 @@ public class Login extends javax.swing.JFrame {
 
     private void txtpasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtpasswordKeyTyped
         // TODO add your handling code here:
-        show.setVisible(true);
-        hide.setVisible(false);
+        if (txtpassword.getText().equals("Password") || txtpassword.getText().equals("")){
+            hide.setVisible(false);
+            show.setVisible(true);
+            txtpassword.setEchoChar('*');
+            txtpassword.setText("");
+        }
+        
     }//GEN-LAST:event_txtpasswordKeyTyped
 
     /**
