@@ -10,9 +10,14 @@ public class services extends javax.swing.JFrame {
         this.username = username;
         initComponents();
         txtusername.setText(username);
-        description.setText("<html>DESCRIPTION: <span style=\"color: #595959;\">Revitalize your vehicle with our Underwash service, eliminating tough dirt and grime for a refreshed look and feel.</span></html>");
-        cwdesc.setText("<html>DESCRIPTION: <span style=\"color: #595959;\">Refresh your ride with our professional carwash. We guarantee a comprehensive clean, inside and out, to keep your vehicle looking best with minimal effort.</html>");
-        
+        description.setText("<html>DESCRIPTION: <span style=\"color: #c5c6c0;\">Revitalize your vehicle with our Underwash service, eliminating tough dirt and grime for a refreshed look and feel.</span></html>");
+        cwdesc.setText("<html>DESCRIPTION: <span style=\"color: #c5c6c0;\">Refresh your ride with our professional carwash. We guarantee a comprehensive clean, inside and out, to keep your vehicle looking best with minimal effort.</html>");
+        ewdesc.setText("<html>DESCRIPTION: <span style=\"color: #c5c6c0;\">Cleans and refreshes engine compartments, enhancing performance and prolonging the life of your vehicle.</html>");
+        codesc.setText("<html>DESCRIPTION: <span style=\"color: #c5c6c0;\">Vital maintenance service that replaces old, contaminated oil with fresh lubricant, ensuring optimal engine performance and longevity.</html>");
+        ddesc.setText("<html>DESCRIPTION: <span style=\"color: #c5c6c0;\">Comprehensive cleaning and restoration process that rejuvenates both the interior and exterior of your vehicle, enhancing its appearance and preserving its value.</html>");
+        tbdesc.setText("<html>DESCRIPTION: <span style=\"color: #c5c6c0;\">Achieving optimal weight distribution across tires to minimize vibrations, ensure even tire wear, and enhance vehicle stability and handling.</html>");
+      
+
     }
     
    
@@ -48,6 +53,14 @@ public class services extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        cwprice1 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        uwStatus2 = new javax.swing.JLabel();
+        ewdesc = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -58,10 +71,33 @@ public class services extends javax.swing.JFrame {
         uwprice = new javax.swing.JLabel();
         uwStatus = new javax.swing.JLabel();
         jPanel19 = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        cwprice3 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        uwStatus4 = new javax.swing.JLabel();
+        ddesc = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
         jPanel20 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        cwprice4 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        uwStatus5 = new javax.swing.JLabel();
+        tbdesc = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jLabel33 = new javax.swing.JLabel();
         jPanel21 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        cwprice2 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        uwStatus3 = new javax.swing.JLabel();
+        codesc = new javax.swing.JLabel();
+        jButton8 = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        back = new javax.swing.JButton();
 
         jPanel9.setBackground(new java.awt.Color(0, 51, 51));
 
@@ -172,7 +208,7 @@ public class services extends javax.swing.JFrame {
 
         jPanel3.setBackground(java.awt.Color.white);
 
-        jPanel6.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel6.setBackground(new java.awt.Color(0, 102, 102));
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/CARWASH.png"))); // NOI18N
@@ -181,7 +217,7 @@ public class services extends javax.swing.JFrame {
         jLabel8.setText("PRICE:");
 
         cwprice.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cwprice.setText("₱250-₱350");
+        cwprice.setText("₱150.00 - ₱250.00");
 
         jLabel9.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
         jLabel9.setText("STATUS:");
@@ -195,9 +231,8 @@ public class services extends javax.swing.JFrame {
         cwdesc.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         cwdesc.setPreferredSize(new java.awt.Dimension(259, 49));
 
-        jButton6.setBackground(new java.awt.Color(102, 255, 102));
+        jButton6.setBackground(new java.awt.Color(153, 255, 204));
         jButton6.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
-        jButton6.setForeground(java.awt.Color.white);
         jButton6.setText("Schedule Appointment");
 
         jLabel11.setFont(new java.awt.Font("Eras Demi ITC", 0, 36)); // NOI18N
@@ -247,20 +282,81 @@ public class services extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel10.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel10.setBackground(new java.awt.Color(0, 102, 102));
+
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/EWASH.png"))); // NOI18N
+
+        jLabel13.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel13.setText("PRICE:");
+
+        cwprice1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cwprice1.setText("₱300.00");
+
+        jLabel14.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel14.setText("STATUS:");
+
+        uwStatus2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        uwStatus2.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus2.setText("Unavailable");
+
+        ewdesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
+        ewdesc.setText("DESCRIPTION: ");
+        ewdesc.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        ewdesc.setPreferredSize(new java.awt.Dimension(259, 49));
+
+        jButton7.setBackground(new java.awt.Color(153, 255, 204));
+        jButton7.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jButton7.setText("Schedule Appointment");
+
+        jLabel16.setFont(new java.awt.Font("Eras Demi ITC", 0, 36)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("ENGINE WASH");
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 312, Short.MAX_VALUE)
+            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(uwStatus2))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(jLabel13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cwprice1))
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ewdesc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24))
+            .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(cwprice1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(uwStatus2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ewdesc, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        jPanel11.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel11.setBackground(new java.awt.Color(0, 102, 102));
 
         jLabel3.setFont(new java.awt.Font("Eras Demi ITC", 0, 36)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -280,13 +376,12 @@ public class services extends javax.swing.JFrame {
         description.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         description.setPreferredSize(new java.awt.Dimension(259, 49));
 
-        jButton5.setBackground(new java.awt.Color(102, 255, 102));
+        jButton5.setBackground(new java.awt.Color(153, 255, 204));
         jButton5.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
-        jButton5.setForeground(java.awt.Color.white);
         jButton5.setText("Schedule Appointment");
 
         uwprice.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        uwprice.setText("₱450-₱650");
+        uwprice.setText("₱450.00-₱650.00");
 
         uwStatus.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         uwStatus.setForeground(new java.awt.Color(204, 255, 204));
@@ -335,43 +430,226 @@ public class services extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel19.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel19.setBackground(new java.awt.Color(0, 102, 102));
+
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/detail1.png"))); // NOI18N
+
+        jLabel22.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel22.setText("PRICE:");
+
+        cwprice3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cwprice3.setText("₱4,000.00 - ₱8,000.00");
+
+        jLabel23.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel23.setText("STATUS:");
+
+        uwStatus4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        uwStatus4.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus4.setText("Unavailable");
+
+        ddesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
+        ddesc.setText("DESCRIPTION: ");
+        ddesc.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        ddesc.setPreferredSize(new java.awt.Dimension(259, 49));
+
+        jButton9.setBackground(new java.awt.Color(153, 255, 204));
+        jButton9.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jButton9.setText("Schedule Appointment");
+
+        jLabel24.setFont(new java.awt.Font("Eras Demi ITC", 0, 36)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("DETAILING");
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 312, Short.MAX_VALUE)
+            .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel19Layout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addComponent(jLabel23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(uwStatus4))
+                    .addGroup(jPanel19Layout.createSequentialGroup()
+                        .addComponent(jLabel22)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cwprice3))
+                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ddesc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24))
+            .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 345, Short.MAX_VALUE)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel24)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(cwprice3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(uwStatus4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ddesc, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        jPanel20.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel20.setBackground(new java.awt.Color(0, 102, 102));
+
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/automotive (1).png"))); // NOI18N
+
+        jLabel31.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel31.setText("PRICE:");
+
+        cwprice4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cwprice4.setText("₱1,500.00");
+
+        jLabel32.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel32.setText("STATUS:");
+
+        uwStatus5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        uwStatus5.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus5.setText("Unavailable");
+
+        tbdesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
+        tbdesc.setText("DESCRIPTION: ");
+        tbdesc.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        tbdesc.setPreferredSize(new java.awt.Dimension(259, 49));
+
+        jButton10.setBackground(new java.awt.Color(153, 255, 204));
+        jButton10.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jButton10.setText("Schedule Appointment");
+
+        jLabel33.setFont(new java.awt.Font("Eras Demi ITC", 0, 36)); // NOI18N
+        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel33.setText("TIRE BALANCING");
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 312, Short.MAX_VALUE)
+            .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel20Layout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addComponent(jLabel32)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(uwStatus5))
+                    .addGroup(jPanel20Layout.createSequentialGroup()
+                        .addComponent(jLabel31)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cwprice4))
+                    .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tbdesc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24))
+            .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 345, Short.MAX_VALUE)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31)
+                    .addComponent(cwprice4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(uwStatus5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tbdesc, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        jPanel21.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel21.setBackground(new java.awt.Color(0, 102, 102));
+
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/CHANGE OIL (1).png"))); // NOI18N
+
+        jLabel18.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel18.setText("PRICE:");
+
+        cwprice2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        cwprice2.setText("₱2,500.00 - ₱4,300.00");
+
+        jLabel19.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
+        jLabel19.setText("STATUS:");
+
+        uwStatus3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        uwStatus3.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus3.setText("Unavailable");
+
+        codesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
+        codesc.setText("DESCRIPTION: ");
+        codesc.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        codesc.setPreferredSize(new java.awt.Dimension(259, 49));
+
+        jButton8.setBackground(new java.awt.Color(153, 255, 204));
+        jButton8.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jButton8.setText("Schedule Appointment");
+
+        jLabel20.setFont(new java.awt.Font("Eras Demi ITC", 0, 36)); // NOI18N
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel20.setText("CHANGE OIL");
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
         jPanel21Layout.setHorizontalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 312, Short.MAX_VALUE)
+            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
+                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel21Layout.createSequentialGroup()
+                        .addComponent(jLabel19)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(uwStatus3))
+                    .addGroup(jPanel21Layout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cwprice2))
+                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(codesc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24))
+            .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 345, Short.MAX_VALUE)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(cwprice2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(uwStatus3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(codesc, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -418,16 +696,7 @@ public class services extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Eras Bold ITC", 0, 48)); // NOI18N
         jLabel2.setText("SERVICES");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 240, 60));
-
-        back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/BACK.png"))); // NOI18N
-        back.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        back.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backActionPerformed(evt);
-            }
-        });
-        jPanel2.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 70, 60));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 240, 60));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 1180, 920));
 
@@ -452,14 +721,10 @@ public class services extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
-        // TODO add your handling code here:
         dispose();
         Dashboard db = new Dashboard(username);
         db.setVisible(true);
-    }//GEN-LAST:event_backActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -500,26 +765,52 @@ public class services extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton back;
+    private javax.swing.JLabel codesc;
     private javax.swing.JLabel cwdesc;
     private javax.swing.JLabel cwprice;
+    private javax.swing.JLabel cwprice1;
+    private javax.swing.JLabel cwprice2;
+    private javax.swing.JLabel cwprice3;
+    private javax.swing.JLabel cwprice4;
+    private javax.swing.JLabel ddesc;
     private javax.swing.JLabel description;
+    private javax.swing.JLabel ewdesc;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -529,26 +820,22 @@ public class services extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JButton sign_out;
+    private javax.swing.JLabel tbdesc;
     private javax.swing.JLabel txtusername;
     private javax.swing.JLabel uwStatus;
     private javax.swing.JLabel uwStatus1;
+    private javax.swing.JLabel uwStatus2;
+    private javax.swing.JLabel uwStatus3;
+    private javax.swing.JLabel uwStatus4;
+    private javax.swing.JLabel uwStatus5;
     private javax.swing.JLabel uwprice;
     // End of variables declaration//GEN-END:variables
 }
