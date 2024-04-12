@@ -150,8 +150,9 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 378, 183, 69));
 
-        sign_out.setBackground(new java.awt.Color(204, 204, 204));
+        sign_out.setBackground(new java.awt.Color(255, 51, 51));
         sign_out.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        sign_out.setForeground(java.awt.Color.white);
         sign_out.setText("SIGN OUT");
         sign_out.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,6 +233,11 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, -1, 41));
 
         services.setBackground(new java.awt.Color(0, 0, 0));
+        services.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                servicesMouseClicked(evt);
+            }
+        });
 
         jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -541,6 +547,12 @@ public class Dashboard extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void servicesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_servicesMouseClicked
+        dispose();
+        services service = new services(username);
+        service.setVisible(true);
+    }//GEN-LAST:event_servicesMouseClicked
 
     /**
      * @param args the command line arguments
