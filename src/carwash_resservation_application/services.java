@@ -172,10 +172,10 @@ public class services extends javax.swing.JFrame {
 
         jPanel3.setBackground(java.awt.Color.white);
 
-        jPanel6.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel6.setBackground(new java.awt.Color(94, 192, 248));
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/CARWASH.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/washing.png"))); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
         jLabel8.setText("PRICE:");
@@ -187,7 +187,7 @@ public class services extends javax.swing.JFrame {
         jLabel9.setText("STATUS:");
 
         uwStatus1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        uwStatus1.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus1.setForeground(new java.awt.Color(229, 0, 21));
         uwStatus1.setText("Unavailable");
 
         cwdesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
@@ -230,8 +230,8 @@ public class services extends javax.swing.JFrame {
                 .addGap(21, 21, 21)
                 .addComponent(jLabel11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(cwprice))
@@ -246,7 +246,7 @@ public class services extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel10.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel10.setBackground(new java.awt.Color(94, 192, 248));
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/EWASH.png"))); // NOI18N
@@ -261,7 +261,7 @@ public class services extends javax.swing.JFrame {
         jLabel14.setText("STATUS:");
 
         uwStatus2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        uwStatus2.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus2.setForeground(new java.awt.Color(229, 0, 21));
         uwStatus2.setText("Unavailable");
 
         ewdesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
@@ -320,7 +320,7 @@ public class services extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel11.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel11.setBackground(new java.awt.Color(94, 192, 248));
 
         jLabel3.setFont(new java.awt.Font("Eras Demi ITC", 0, 36)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -335,6 +335,7 @@ public class services extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Eras Demi ITC", 0, 14)); // NOI18N
         jLabel6.setText("STATUS:");
 
+        description.setBackground(new java.awt.Color(94, 192, 248));
         description.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
         description.setText("DESCRIPTION: ");
         description.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -347,8 +348,8 @@ public class services extends javax.swing.JFrame {
         uwprice.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         uwprice.setText("₱450.00-₱650.00");
 
+        uwStatus.setBackground(new java.awt.Color(0, 0, 0));
         uwStatus.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        uwStatus.setForeground(new java.awt.Color(204, 255, 204));
         uwStatus.setText("Available");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
@@ -394,7 +395,7 @@ public class services extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel19.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel19.setBackground(new java.awt.Color(94, 192, 248));
 
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/detail1.png"))); // NOI18N
@@ -409,7 +410,7 @@ public class services extends javax.swing.JFrame {
         jLabel23.setText("STATUS:");
 
         uwStatus4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        uwStatus4.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus4.setForeground(new java.awt.Color(229, 0, 21));
         uwStatus4.setText("Unavailable");
 
         ddesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
@@ -468,7 +469,7 @@ public class services extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel20.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel20.setBackground(new java.awt.Color(94, 192, 248));
 
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/automotive (1).png"))); // NOI18N
@@ -483,7 +484,7 @@ public class services extends javax.swing.JFrame {
         jLabel32.setText("STATUS:");
 
         uwStatus5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        uwStatus5.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus5.setForeground(new java.awt.Color(229, 0, 21));
         uwStatus5.setText("Unavailable");
 
         tbdesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N
@@ -542,7 +543,7 @@ public class services extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel21.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel21.setBackground(new java.awt.Color(94, 192, 248));
 
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/carwash_resservation_application/CC105 IMAGE/CHANGE OIL (1).png"))); // NOI18N
@@ -557,7 +558,7 @@ public class services extends javax.swing.JFrame {
         jLabel19.setText("STATUS:");
 
         uwStatus3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        uwStatus3.setForeground(new java.awt.Color(255, 153, 153));
+        uwStatus3.setForeground(new java.awt.Color(229, 0, 21));
         uwStatus3.setText("Unavailable");
 
         codesc.setFont(new java.awt.Font("Eras Demi ITC", 0, 12)); // NOI18N

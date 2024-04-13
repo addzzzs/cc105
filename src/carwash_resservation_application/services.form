@@ -184,7 +184,7 @@
             <Container class="javax.swing.JPanel" name="jPanel6">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="66" red="0" type="rgb"/>
+                  <Color blue="f8" green="c0" red="5e" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -219,8 +219,8 @@
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                           <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel7" min="-2" pref="102" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabel7" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="cwprice" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -244,7 +244,7 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/carwash_resservation_application/CC105 IMAGE/CARWASH.png"/>
+                      <Image iconType="3" name="/carwash_resservation_application/CC105 IMAGE/washing.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -278,7 +278,7 @@
                       <Font name="Arial" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="ff" type="rgb"/>
+                      <Color blue="15" green="0" red="e5" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Unavailable"/>
                   </Properties>
@@ -320,7 +320,7 @@
             <Container class="javax.swing.JPanel" name="jPanel10">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="66" red="0" type="rgb"/>
+                  <Color blue="f8" green="c0" red="5e" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -414,7 +414,7 @@
                       <Font name="Arial" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="ff" type="rgb"/>
+                      <Color blue="15" green="0" red="e5" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Unavailable"/>
                   </Properties>
@@ -456,7 +456,7 @@
             <Container class="javax.swing.JPanel" name="jPanel11">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="66" red="0" type="rgb"/>
+                  <Color blue="f8" green="c0" red="5e" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -547,6 +547,9 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="description">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="f8" green="c0" red="5e" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Eras Demi ITC" size="12" style="0"/>
                     </Property>
@@ -578,11 +581,11 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="uwStatus">
                   <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial" size="14" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="cc" green="ff" red="cc" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Available"/>
                   </Properties>
@@ -592,7 +595,7 @@
             <Container class="javax.swing.JPanel" name="jPanel19">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="66" red="0" type="rgb"/>
+                  <Color blue="f8" green="c0" red="5e" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -686,7 +689,7 @@
                       <Font name="Arial" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="ff" type="rgb"/>
+                      <Color blue="15" green="0" red="e5" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Unavailable"/>
                   </Properties>
@@ -728,7 +731,7 @@
             <Container class="javax.swing.JPanel" name="jPanel20">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="66" red="0" type="rgb"/>
+                  <Color blue="f8" green="c0" red="5e" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -822,7 +825,7 @@
                       <Font name="Arial" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="ff" type="rgb"/>
+                      <Color blue="15" green="0" red="e5" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Unavailable"/>
                   </Properties>
@@ -864,7 +867,7 @@
             <Container class="javax.swing.JPanel" name="jPanel21">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="66" red="0" type="rgb"/>
+                  <Color blue="f8" green="c0" red="5e" type="rgb"/>
                 </Property>
               </Properties>
 
@@ -958,7 +961,7 @@
                       <Font name="Arial" size="14" style="1"/>
                     </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="99" green="99" red="ff" type="rgb"/>
+                      <Color blue="15" green="0" red="e5" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Unavailable"/>
                   </Properties>
